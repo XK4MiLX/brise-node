@@ -6,9 +6,9 @@ RUN apt-get update && \
 apt-get install software-properties-common wget -y
 
 RUN add-apt-repository -y ppa:ethereum/ethereum && \
-apt-get update && \
+apt-get update -y && \
 apt-get install ethereum -y && \
-apt-get upgrade geth
+apt-get upgrade geth -y
 
 COPY brise_mainnet.json /tmp/brise_mainnet.json
 COPY static-nodes.json /tmp/static-nodes.json
