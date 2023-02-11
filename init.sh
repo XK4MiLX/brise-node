@@ -4,7 +4,7 @@
 if [[ ! -d /root/bitgert ]]; then
   mkdir -p /root/bitgert
   cd /root/bitgert
-  #Download the required JSON files
+  #Move the required JSON files
   cp /tmp/brise_mainnet.json /root/bitgert/brise_mainnet.json
 fi
 #Initialize the node
